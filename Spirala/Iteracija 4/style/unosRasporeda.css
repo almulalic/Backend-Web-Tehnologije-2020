@@ -1,0 +1,111 @@
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+th {
+  height: 50px;
+  background: rgba(100, 100, 100, 0.3);
+  cursor: pointer;
+  user-select: none;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e3e7;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.baseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+#tabele {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 5em;
+}
+
+#tabelaPredmeti {
+  width: 200px;
+  margin-left: 100px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  border: 3px solid black;
+  border-radius: 5%;
+  padding: 20px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.form-time-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-time-section input {
+  width: 125px;
+}
+
+.form button {
+  height: 25px;
+  width: 100px;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: crimson;
+}
+
+.errorContainer p {
+  margin: 5px;
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}

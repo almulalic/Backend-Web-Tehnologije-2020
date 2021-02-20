@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pregled Aktivnosti</title>
+    <link rel="stylesheet" href="http://localhost:8080/pregledAktivnost.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="izborDanaContainer">
+      <h4>Izbor dana:</h4>
+      <select id="izborDana">
+        <option value="svi">Svi</option>
+        <option value="ponedeljak">Ponedeljak</option>
+        <option value="utorak">Utorak</option>
+        <option value="srijeda">Srijeda</option>
+        <option value="cetvrtak">Četvrtak</option>
+        <option value="petak">Petak</option>
+      </select>
+    </div>
+    <table id="tabelaAktivnosti">
+      <thead>
+        <tr id="header">
+          <th id="naziv">Naziv</th>
+          <th id="aktivnost">Aktivnost</th>
+          <th id="dan">Dan</th>
+          <th id="pocetak">Početak</th>
+          <th id="kraj">Kraj</th>
+        </tr>
+      </thead>
+      <tbody id="tableAktivnostiBody"></tbody>
+    </table>
+    <span id="errorOutput"> </span>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://localhost:8080/ajaxSortiranje.js"></script>
+  <script src="http://localhost:8080/pregledAktivnosti.js"></script>
+</html>

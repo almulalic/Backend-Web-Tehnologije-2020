@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raspored</title>
+    <link rel="stylesheet" href="../style/googlemeet.css" />
+    <link rel="stylesheet" href="../style/raspored.css" />
+  </head>
+  <body>
+    <div>
+      <div class="mainContainer">
+        <h1>Izaberite testni HTML string:</h1>
+        <div class="slucajeviContainer">
+          <div id="0" class="testniSlucaj">PRVI</div>
+        </div>
+        <div class="buttonContainer">
+          <div class="inputContainer">
+            <input id="trenutnaAktivnostDatum" placeholder="Unesite datum kao string..." />
+            <input id="trenutnaAktivnostGrupa" placeholder="Unesite ime grupe..." />
+            <button onClick="dajTrenutnuAktivnost()">Daj dajTrenutnu Aktivnost</button>
+          </div>
+          <div class="inputContainer">
+            <input id="sljedecaAktivnostDatum" placeholder="Unesite datum kao string..." />
+            <input id="sljedecaAktivnostGrupa" placeholder="Unesite ime grupe..." />
+            <button onClick="dajSljedecuAktivnost()">Daj Sljedecu Aktivnost</button>
+          </div>
+          <div class="inputContainer">
+            <input id="prethodnaAktivnostDatum" placeholder="Unesite datum kao string..." />
+            <input id="prethodnaAktivnostGrupa" placeholder="Unesite ime grupe.." />
+            <button onClick="dajPrethodnuAktivnost()">Daj Prethodnu Aktivnost</button>
+          </div>
+        </div>
+        <div id="output"></div>
+      </div>
+    </div>
+  </body>
+  <script src="../data/ulaz2.js"></script>
+  <script src="../raspored/raspored.js"></script>
+  <script src="../script/rasporedButtons.js"></script>
+</html>

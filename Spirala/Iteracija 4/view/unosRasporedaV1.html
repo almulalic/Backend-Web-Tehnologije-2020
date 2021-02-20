@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unos Rasporeda</title>
+    <link rel="stylesheet" href="http://localhost:8080/unosRasporeda.css" />
+  </head>
+  <body>
+    <section class="baseContainer">
+      <section class="form-section">
+        <form id="mainForm" class="form">
+          <div class="form-element">
+            <label for="nazivInput">Naziv Predmeta</label>
+            <input id="nazivInput" value="" />
+          </div>
+
+          <div class="form-element">
+            <label for="aktivnostiInput">Aktivnost</label>
+            <input id="aktivnostiInput" />
+          </div>
+
+          <div class="form-element">
+            <label for="danInput">Dan</label>
+            <input id="danInput" />
+          </div>
+
+          <div class="form-time-section">
+            <div class="form-element">
+              <label for="pocetakInput">Vrijeme Pocetka</label>
+              <input id="pocetakInput" />
+            </div>
+
+            <div class="form-element">
+              <label for="krajInput">Vrijeme Kraja</label>
+              <input id="krajInput" />
+            </div>
+          </div>
+
+          <div class="form-element"><button type="button" onclick="izvrsiDodavanje()">Pošalji</button></div>
+
+          <div id="form-output" class="form-output"></div>
+        </form>
+      </section>
+      <section id="tabele">
+        <table id="tabelaAktivnosti">
+          <thead>
+            <tr id="header">
+              <th id="naziv">Predmet I Grupa</th>
+              <th id="aktivnost">Aktivnost i Tip</th>
+              <th id="dan">Dan</th>
+              <th id="pocetak">Početak</th>
+              <th id="kraj">Kraj</th>
+            </tr>
+          </thead>
+          <tbody id="tableAktivnostiBody"></tbody>
+        </table>
+
+        <table id="tabelaPredmeti">
+          <thead>
+            <tr id="header">
+              <th id="predmet">Predmet</th>
+            </tr>
+          </thead>
+          <tbody id="tablePredmetiBody"></tbody>
+        </table>
+      </section>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://localhost:8080/ajaxSortiranje.js"></script>
+  <script src="http://localhost:8080/unosRasporeda.js"></script>
+</html>

@@ -1,0 +1,66 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.slucajeviContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20% 0 20%;
+}
+
+.testniSlucaj {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 3px 3px 2px 1px black;
+}
+
+.testniSlucaj:hover {
+  cursor: pointer;
+  background: gray;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.buttonContainer button {
+  height: 75px;
+  width: 150px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aktivan {
+  background: lightgoldenrodyellow;
+}
+
+#output {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.good {
+  color: greenyellow;
+}
+
+.bad {
+  color: lightcoral;
+}
+
+#output a {
+  color: inherit;
+}

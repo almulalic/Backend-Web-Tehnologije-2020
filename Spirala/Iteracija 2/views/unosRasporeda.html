@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unos Rasporeda</title>
+    <link rel="stylesheet" href="../style/unosRasporeda.css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <iframe name="redirect" style="display: none"></iframe>
+      <form
+        id="mainForm"
+        class="form"
+        method="POST"
+        target="redirect"
+        action="http://localhost:8080/raspored"
+      >
+        <div class="form-element">
+          <label for="nazivPredmeta">Naziv Predmeta</label>
+          <input name="nazivPredmeta" id="nazivPredmeta" value="" />
+        </div>
+
+        <div class="form-element">
+          <label for="aktivnost">Aktivnost</label>
+          <input name="aktivnost" id="aktivnost" />
+        </div>
+
+        <div class="form-element">
+          <label for="dan">Dan</label>
+          <input name="dan" id="dan" />
+        </div>
+
+        <div class="form-time-section">
+          <div class="form-element">
+            <label for="vrijemePocetka">Vrijeme Pocetka</label>
+            <input name="vrijemePocetak" id="vrijemePocetak" />
+          </div>
+
+          <div class="form-element">
+            <label for="vrijemeKraja">Vrijeme Kraja</label>
+            <input name="vrijemeKraj" id="vrijemeKraj" />
+          </div>
+        </div>
+
+        <div class="form-element"><button type="submit">Pošalji</button></div>
+
+        <div class="form-output"></div>
+      </form>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/unosRasporeda.js"></script>
+</html>

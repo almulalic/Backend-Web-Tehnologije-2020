@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unos Studenta</title>
+    <link rel="stylesheet" href="http://localhost:8080/studenti.css" />
+  </head>
+  <body>
+    Prethodno stanje baze: <br />
+    Grupa <br />
+    (naziv:RMAgrupa1,predmet:(naziv:RMA)) <br />
+    (naziv:WTgrupa1,predmet:(naziv:WT)) (naziv:WTgrupa2,predmet:(naziv:WT))
+    <br /><br />
+
+    Student <br />
+    (ime:Neko Nekić,index:12345,grupa:(naziv:WTgrupa1)) <br />
+    (ime:Četvrti Neko,index:18009,grupa:(naziv:RMAgrupa1)) <br />
+    <br /><br />
+    Podaci koji se dodaju Grupa: WTgrupa2
+
+    <br /><br />
+
+    TextArea: <br />
+    Neko Nekić,12345 <br />
+    Drugi Neko,18921 <br />
+    Treći Neko,18009 <br />
+
+    <br /><br />
+    Nakon unosa: Student (ime:Neko Nekić,index:12345,grupa:(naziv:WTgrupa2)) (ime:Četvrti
+    Neko,index:18009,grupa:(naziv:RMAgrupa1)) (ime:Drugi Neko,index:18921,grupa:(naziv:WTgrupa2))
+
+    <br /><br />
+    TextArea: Student Treći Neko nije kreiran jer postoji student Četvrti Neko sa indexom 18009
+
+    <div class="izborDanaContainer">
+      <textarea
+        id="studentiInput"
+        name="studentiInput"
+        placeholder="Unesite studente..."
+        rows="5"
+        cols="50"
+      ></textarea>
+      <select id="grupaSelect" name="grupaSelect"></select>
+      <button onclick="posaljiFormu()">Pošalji</button>
+    </div>
+  </body>
+  <script>
+    // Globalne varijable za sve navedne skripte
+    const base_api_url = "http://localhost:8080";
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://localhost:8080/studenti.js"></script>
+</html>

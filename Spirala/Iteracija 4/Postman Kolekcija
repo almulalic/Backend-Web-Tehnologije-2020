@@ -1,0 +1,864 @@
+{
+	"info": {
+		"_postman_id": "264c1cd9-ed0d-4fed-86d9-16d8ee0346ab",
+		"name": "Spirala 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Aktivnost",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/aktivnost/all",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"aktivnost",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/aktivnost/3",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"aktivnost",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "naziv",
+									"type": "text"
+								},
+								{
+									"key": "pocetak",
+									"value": "10,5",
+									"type": "text"
+								},
+								{
+									"key": "kraj",
+									"value": "10,6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/aktivnost",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"aktivnost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "UPDATE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/aktivnost/3",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"aktivnost",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/aktivnost/3",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"aktivnost",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dan",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/dan/all",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"dan",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/dan/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"dan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "naziv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/dan",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"dan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "UPDATE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/dan/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"dan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/dan/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"dan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grupa",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/grupa/all",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/grupa/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "WTGrupa2",
+									"type": "text"
+								},
+								{
+									"key": "predmetId",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/grupa",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "UPDATE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/grupa/5",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/grupa/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Predmet",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/predmet/all",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"predmet",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/predmet/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"predmet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "WT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/predmet",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"predmet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "UPDATE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/predmet/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"predmet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/predmet/2",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"predmet",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/student/all",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/student/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/student?ime=Neko Nekić&index=12345",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student"
+							],
+							"query": [
+								{
+									"key": "ime",
+									"value": "Neko Nekić"
+								},
+								{
+									"key": "index",
+									"value": "12345"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ime",
+									"value": "Neko Nekić",
+									"type": "text"
+								},
+								{
+									"key": "index",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "grupaId",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/student/raw",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student",
+								"raw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add CSV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "naziv",
+									"type": "text"
+								},
+								{
+									"key": "pocetak",
+									"value": "10,5",
+									"type": "text"
+								},
+								{
+									"key": "kraj",
+									"value": "10,6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/student",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ime",
+									"value": "UPDATE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/student/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/student/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tip",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/tip/all",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"tip",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/tip/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"tip",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "naziv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/tip",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"tip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "naziv",
+									"value": "UPDATE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_host}}/v2/tip/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"tip",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/tip/1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"tip",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GrupaStudenti",
+			"item": [
+				{
+					"name": "Spoji Studenta Sa Grupom",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/grupa/student/1/grupa/2",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa",
+								"student",
+								"1",
+								"grupa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Izbaci Studenta Iz Grupe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/v2/grupa/student/1/grupa/2",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"v2",
+								"grupa",
+								"student",
+								"1",
+								"grupa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

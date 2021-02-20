@@ -1,0 +1,59 @@
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+th {
+  height: 50px;
+  background: rgba(100, 100, 100, 0.3);
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background: rgba(100, 100, 100, 0.6);
+}
+
+tr:nth-child(even) {
+  background-color: #e6e3e7;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.izborDanaContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#izborDana {
+  height: 35px;
+  width: 150px;
+  margin: 10px;
+}
+
+.error {
+  color: crimson;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.errorContainer p {
+  margin: 5px;
+}
