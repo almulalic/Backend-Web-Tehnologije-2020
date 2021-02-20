@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabovi</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      "
+    >
+      <a onclick="ucitajStranicu('1')" target="_blank">Stranica 1</a>
+      <a onclick="ucitajStranicu('2')" target="_blank">Stranica 2</a>
+      <a onclick="ucitajStranicu('3')" target="_blank">Stranica 3</a>
+    </div>
+    <div id="output" style="width: 300px; border: 1px solid black; height: 150px"></div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function ucitajStranicu(broj) {
+      $.ajax({
+        url: "http://localhost:8085/sadrzaj" + broj + ".html",
+        method: "GET",
+        success: (data) => (document.getElementById("output").innerHTML = data),
+      });
+    }
+  </script>
+</html>
